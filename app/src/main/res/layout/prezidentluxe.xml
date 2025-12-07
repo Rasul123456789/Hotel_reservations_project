@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/bgImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/arsenal"
+        android:scaleType="centerCrop" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="260dp">
+
+                <ImageView
+                    android:id="@+id/ivRoomImage"
+                    android:layout_width="359dp"
+                    android:layout_height="218dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/milan_goo" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tvRoomTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prezident Luxe Бөлме"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/tvCharacteristics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📏 Площадь: 120 м²\n🌇 Терезе: Қала көрінісі / теңіз көрінісі\n🛁 Ванна бөлме: Жеке спа-ванна, джакузи, жылы еден, душ кабинасы\n🛏 Төсек: King-size + қосымша қонақ төсек\n📶 Wi-Fi: Жоғары жылдамдықты\n❄ Кондиционер: Инверторлы, жеке басқару\n📺 Smart TV: 2 дана, спутниктік арналар, Netflix\n☕ Кофе/чай жасау мүмкіндігі: Espresso машинасы, мини-бар\n🧴 Құрал-жабдықтар: Жеке сейф, косметикалық жинақ, халат және аяқ киім\n🧺 Қызметтер: Күнделікті бөлме тазалығы, 24/7 қызмет көрсету, жеке бөлме қызметкері\n🚪 Балкон: Жеке, көрінісі ашық\n🎹 Қосымша: Музыкалық жүйе, мини-офис бөлмесі\n🔒 Қауіпсіздік: Жеке кіреберіс, электрондық кілт\n🍽 Ас мәзірі: Тапсырыс бойынша асты бөлмеге жеткізу, "
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000" />
+
+            <TextView
+                android:text="Келу күні:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp" />
+
+            <Button
+                android:id="@+id/btnCheckIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Келу күнін таңдау"
+                android:backgroundTint="#03A9F4"
+                android:textColor="#fff" />
+
+            <TextView
+                android:text="Кету күні:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp" />
+
+            <Button
+                android:id="@+id/btnCheckOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Кету күнін таңдау"
+                android:backgroundTint="#03A9F4"
+                android:textColor="#fff" />
+
+            <TextView
+                android:text="Жалпы баға:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#FF0000"
+                android:layout_marginTop="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvTotalPrice"
+                android:text="0 ₸"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#FF0000"
+                android:layout_marginTop="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnBook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Брондау"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="← Артқа"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#2196F3"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

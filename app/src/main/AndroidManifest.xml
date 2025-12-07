@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+
+        <!-- Бөлме Activity-лары -->
+        <activity android:name=".EconomActivity"/>
+        <activity android:name=".StandardActivity"/>
+        <activity android:name=".ComfortActivity"/>
+        <activity android:name=".BusinessActivity"/>
+        <activity android:name=".LuxeActivity"/>
+        <activity android:name=".Prezident_LuxeActivity"/>
+        <activity android:name=".BookingActivity"/>
+
+        <!-- Тамақ мәзірі -->
+        <activity android:name=".FoodMenuActivity"/>
+
+        <!-- Негізгі бет -->
+        <activity android:name=".MainActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

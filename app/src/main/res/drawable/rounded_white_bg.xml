@@ -1,0 +1,6 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Мөлдір ақ фон (60%) -->
+    <solid android:color="#99FFFFFF"/> <!-- 99 = 60% opacity -->
+    <corners android:radius="20dp"/>
+    <padding android:left="20dp" android:right="20dp"/>
+</shape>

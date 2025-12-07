@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/bgImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/econom_broon"
+        android:scaleType="centerCrop" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#77000000" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_white_bg"
+            android:padding="20dp"
+            android:elevation="8dp"
+            android:layout_margin="15dp">
+
+            <Button
+                android:id="@+id/btnBackBooking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="← Артқа"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#2196F3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Брондау формасы"
+                android:textColor="#111111"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp" />
+
+            <!-- 🔵 FULL NAME -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Толық аты-жөні:"
+                android:textColor="#111111"
+                android:layout_marginTop="15dp" />
+
+            <EditText
+                android:id="@+id/etFullName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/input_field"
+                android:hint="Атыңыз"
+                android:textColor="#000000"
+                android:textColorHint="#666666"
+                android:padding="12dp" />
+
+            <!-- 🔵 PHONE -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Телефон нөмірі:"
+                android:textColor="#111111"
+                android:layout_marginTop="15dp" />
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/input_field"
+                android:hint="+7 ___ ___ __ __"
+                android:textColor="#000000"
+                android:inputType="phone"
+                android:textColorHint="#666666"
+                android:padding="12dp" />
+
+            <!-- 🔵 EMAIL -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E-mail:"
+                android:textColor="#111111"
+                android:layout_marginTop="15dp" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/input_field"
+                android:hint="example@gmail.com"
+                android:textColor="#000000"
+                android:textColorHint="#666666"
+                android:inputType="textEmailAddress"
+                android:padding="12dp" />
+
+            <!-- 🔵 ADULTS -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ересектер саны:"
+                android:textColor="#111111"
+                android:layout_marginTop="15dp" />
+
+            <EditText
+                android:id="@+id/etAdults"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/input_field"
+                android:hint="Мысалы: 2"
+                android:textColor="#000000"
+                android:inputType="number"
+                android:textColorHint="#666666"
+                android:padding="12dp" />
+
+            <!-- 🔵 KIDS -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Балалар саны:"
+                android:textColor="#111111"
+                android:layout_marginTop="15dp" />
+
+            <EditText
+                android:id="@+id/etKids"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/input_field"
+                android:hint="Мысалы: 1"
+                android:textColor="#000000"
+                android:inputType="number"
+                android:textColorHint="#666666"
+                android:padding="12dp" />
+
+            <!-- 🔵 REQUEST -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Арнайы өтініш:"
+                android:textColor="#111111"
+                android:layout_marginTop="15dp" />
+
+            <EditText
+                android:id="@+id/etRequest"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/input_field"
+                android:hint="Өтінішіңіз"
+                android:textColor="#000000"
+                android:inputType="textMultiLine"
+                android:textColorHint="#666666"
+                android:gravity="top"
+                android:padding="12dp" />
+
+            <!-- 🔷 ТӨЛЕМ БАТЫРМАЛАРЫ -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/btnKaspiPay"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="Kaspi арқылы төлеу"
+                    android:backgroundTint="#D50000"
+                    android:textColor="#FFFFFF" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/btnHalykPay"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="Halyk Pay"
+                    android:backgroundTint="#008F39"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/btnUploadCheck"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="Төлем чегін жүктеу"
+                android:backgroundTint="#FF9800"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:layout_marginTop="20dp" />
+
+            <!-- ✔ CONFIRM -->
+            <Button
+                android:id="@+id/btnConfirmBooking"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="Брондауды аяқтау"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#4CAF50"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

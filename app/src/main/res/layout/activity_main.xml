@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 🔥 Фон сурет -->
+    <ImageView
+        android:id="@+id/bgImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/juventus" />
+
+
+    <!-- 🔥 Негізгі контент -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="80dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Қонақ үйді брондау"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="20dp" />
+
+
+            <!-- Қала таңдауы -->
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteCities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Қаланы таңдаңыз"
+                android:inputType="text"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/input_field"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textSize="16sp"/>
+
+            <!-- Бөлме түрі -->
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteRooms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Бөлме түрі"
+                android:inputType="text"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/input_field"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textSize="16sp"/>
+
+            <!-- Іздеу батырмасы -->
+            <Button
+                android:id="@+id/btnSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Іздеу"
+                android:backgroundTint="#3498DB"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="15dp" />
+
+            <!-- Тамаққа тапсырыс беру батырмасы -->
+            <Button
+                android:id="@+id/btnFoodOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Тамаққа тапсырыс беру"
+                android:backgroundTint="#27AE60"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
